@@ -8,9 +8,11 @@
     </tr>
   </thead>
   <tbody>
-    <!-->List of Articles</!-->
-    <!-->Pay attention to the % sign where if it doesn't follow a == sign, it means it won't be displayed to the user</!-->
-    <!-->If %=, then the user can see all the registers stored at @articles </!-->
+
+      <!-- List of Articles !-->
+      <!-- Pay attention to the % sign where if it doesn't follow a == sign, it means it won't be displayed to the user !-->
+      <!-- If %=, then the user can see all the registers stored at @articles !-->
+
     <% @articles.each do | article | %>
       <tr>
         <td><%= article.title %></td>
