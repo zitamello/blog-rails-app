@@ -1,0 +1,22 @@
+<h1>Articles listing page </h1>
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-->List of Articles</!-->
+    <!-->Pay attention to the % sign where if it doesn't follow a == sign, it means it won't be displayed to the user</!-->
+    <!-->If %=, then the user can see all the registers stored at @articles </!-->
+    <% @articles.each do | article | %>
+      <tr>
+        <td><%= article.title %></td>
+        <td><%= article.description %></td>
+        <td>Placeholder</td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
