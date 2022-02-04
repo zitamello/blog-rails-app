@@ -1,29 +1,32 @@
-<h1>Articles listing page </h1>
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Description</th>
-      <th colspan="3">Actions</th>
-    </tr>
-  </thead>
-  <tbody>
-
-      <!-- List of Articles !-->
-      <!-- Pay attention to the % sign where if it doesn't follow a == sign, it means it won't be displayed to the user !-->
-      <!-- If %=, then the user can see all the registers stored at @articles !-->
-
-    <% @articles.each do | article | %>
+<%= render 'articles/navbar' %>
+<%= render 'articles/herotag' %>
+<div class="box">
+  <table id="tb-article" class='table is-hoverable'>
+    <thead>
       <tr>
-        <td><%= article.title %></td>
-        <td><%= article.description %></td>
-        <td><%= link_to 'Read', article_path(article) %></td>
-        <td><%= link_to 'Edit', edit_article_path(article) %></td>
-        <!-- Link to doesnt work for delete on rails 7. Must use button_to !-->
-        <td><%= button_to 'Delete', article_path(article), method: :delete, data: { confirm: "Are you sure?" } %></td>
+        <th>Title</th>
+        <th>Description</th>
+        <th colspan="3">Actions</th>
       </tr>
-    <% end %>
-  </tbody>
-</table>
-<br>
-<p><%= link_to 'Create New Article', new_article_path %>
+    </thead>
+    <tbody>
+
+        <!-- List of Articles !-->
+        <!-- Pay attention to the % sign where if it doesn't follow a == sign, it means it won't be displayed to the user !-->
+        <!-- If %=, then the user can see all the registers stored at @articles !-->
+
+      <% @articles.each do | article | %>
+        <tr>
+          <td class="td-title"><%= article.title %></td>
+          <td class="td-desc"><%= article.description %></td>
+          <td><%= link_to 'Read', article_path(article), class:'button is-primary is-small is-outlined' %></td>
+          <td><%= link_to 'Edit', edit_article_path(article), class:'button is-info is-small is-outlined' %></td>
+          <!-- Link to doesnt work for delete on rails 7. Must use button_to !-->
+          <td><%= button_to 'Delete', article_path(article), class:'button is-danger is-small', method: :delete, data: { confirm: "Are you sure?" } %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+  <br>
+  <p><%= link_to 'Create New Article', new_article_path, id:'btn-create', class:'button is-success' %>
+</div>

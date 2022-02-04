@@ -11,10 +11,7 @@
 
   <div id="navbarBasicExample" class="navbar-menu">
     <div class="navbar-start">
-      <a id="a-Home" class="navbar-item" href="#home.html.erb">
-        Home
-      </a>
-
+        <%= link_to "Home", root_path, id:'a-home', class:'navbar-item'%>
         <%= link_to "Articles", articles_path, id:'a-articles', class:'navbar-item'%>
 
       <div class="navbar-item has-dropdown is-hoverable">

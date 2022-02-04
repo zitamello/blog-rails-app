@@ -1,0 +1,27 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap');
+
+
+#section-hero {
+  cursor: default;
+  background-color: #317256;
+}
+
+#tb-article {
+  margin-left: 25%;
+}
+
+.td-title {
+  font-weight: 500;
+  cursor: default;
+}
+
+.td-desc {
+  cursor: default;
+}
+
+#btn-create {
+  font-weight: 500;
+  background-color: #317256;
+  margin-left: 40%;
+}
