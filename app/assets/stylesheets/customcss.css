@@ -1,0 +1,95 @@
+
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap');
+
+#div-navbar {
+  background-color: #000;
+}
+
+.h3-head {
+  font-size: 25px;
+  font-weight: 500;
+  font-family: 'Rowdies', cursive;
+  cursor: default;
+  color: #fff;
+  margin-top: 0.2em;
+  margin-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+#a-Home{
+  color: #317256;
+  font-weight: 500;
+}
+
+#a-articles {
+  color: #317256;
+  font-weight: 500;
+}
+
+#a-more {
+  color: #317256;
+  font-weight: 500;
+}
+
+
+#div-main-container {
+  height: 35em;
+  width: 100%;
+  background-color: #317256;
+  margin-top: 2rem;
+}
+
+.img-journal {
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+
+    /* Full height */
+    height: 100%;
+    width: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.h1-blog {
+  font-size: 60px;
+  font-family: 'Rowdies', cursive;
+  font-weight: 400;
+  cursor: default;
+}
+
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+  cursor: default;
+}
+
+#btn-articles {
+  width: 10%;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 10%;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+
+}
